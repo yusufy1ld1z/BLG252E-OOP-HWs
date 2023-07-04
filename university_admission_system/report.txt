@@ -1,0 +1,20 @@
+/* @Author
+ * Student Name:  Yusuf Yildiz
+ * Student ID : 150210006
+ */
+
+-------------------In main() function.-----------------------------------------------
+1- university_array[3] object invoked the evaluate_student method with constant reference to student3 argument, so no copy constructor invoked and no memory allocated.
+-------------------In evalute_student() function.------------------------------------
+2- Local student object in evaluate_student method invoked the get_gpa() getter method with no arguments. 
+3- Again, local student object in evaluate_student method invoked the get_gre() getter method with no arguments.
+4- Again, local student object in evaluate_student method invoked the get_toefl() getter method with no arguments.
+5- If if statement satisfied, local student object invoked the get_name() getter method with no arguments.
+5- Else, local student object invoked the get_name() getter method with no arguments.
+6- Local student object invoked the increment_num_of_app() method with no arguments. The mutable num_of_app incremented in that function.
+-------------------In main() function.-----------------------------------------------
+7- delete keyword invoked the destructor of the student class with no arguments by student4. Then, this object is deleted from heap.
+8- As there is no statement but return, other objects deleted in the exact reverse order as they created because they stored in the stack.
+So, destructors of the objects are called in that order Amy -> Ross -> Michael.
+9- Then, the university_array is deleted from the stack. Because there is no explicit destructor of University object, default destructor is called respectively.
+-------------------return 0; (end of the story)--------------------------------------

@@ -1,0 +1,58 @@
+starting test build
+running command: g++ -Wall -Werror src/main.cpp src/university.cpp src/student.cpp -I include -o bin/main
+  expecting (2s): _EOF_
+  received: _EOF_
+exit status: 0 (expected 0)
+starting test case1
+running command: ./bin/main
+  expecting (2s): "Welcome to the University Admission System!\s+"
+  received: "Welcome to the University Admission System!
+"
+  expecting (2s): "Micheal logged in to the system.\s+"
+  received: "Micheal logged in to the system.
+"
+  expecting (2s): "Ross logged in to the system.\s+"
+  received: "Ross logged in to the system.
+"
+  expecting (2s): "Amy logged in to the system.\s+"
+  received: "Amy logged in to the system.
+"
+  expecting (2s): "Micheal logged in to the system.\s+"
+  received: "Micheal logged in to the system.
+"
+  expecting (2s): "Micheal is admitted to Scranton State University.\s+"
+  received: "Micheal is admitted to Scranton State University.
+"
+  expecting (2s): "Ross is admitted to Central Perk College.\s+"
+  received: "Ross is admitted to Central Perk College.
+"
+  expecting (2s): "Ross is rejected from Brooklyn Institute of Technology.\s+"
+  received: "Ross is rejected from Brooklyn Institute of Technology.
+"
+  expecting (2s): "Ross is rejected from McLaren's University.\s+"
+  received: "Ross is rejected from McLaren's University.
+"
+  expecting (2s): "Amy is admitted to Scranton State University.\s+"
+  received: "Amy is admitted to Scranton State University.
+"
+  expecting (2s): "Amy is rejected from McLaren's University.\s+"
+  received: "Amy is rejected from McLaren's University.
+"
+  expecting (2s): "Lily logged out of the system with 0 application\(s\).\s+"
+  received: "Lily logged out of the system with 0 application(s).
+"
+  expecting (2s): "Amy logged out of the system with 2 application\(s\).\s+"
+  received: "Amy logged out of the system with 2 application(s).
+"
+  expecting (2s): "Ross logged out of the system with 3 application\(s\).\s+"
+  received: "Ross logged out of the system with 3 application(s).
+"
+  expecting (2s): "Micheal logged out of the system with 1 application\(s\).\s+"
+  received: "Micheal logged out of the system with 1 application(s).
+"
+  expecting (2s): _EOF_
+  received: _EOF_
+exit status: 0 (expected 0)
+build .................................... PASSED
+case1 .................................... 100 / 100
+Grade: 100 / 100
